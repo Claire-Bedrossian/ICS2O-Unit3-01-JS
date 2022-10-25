@@ -1,7 +1,7 @@
-// Copyright (c) 202X Claire Bedrossian All rights reserved
+// Copyright (c) 2022 Claire Bedrossian All rights reserved
 //
 // Created by: Claire Bedrossian
-// Created on: XXX 202X
+// Created on: Oct 2022
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -16,8 +16,19 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function calculates the area and perimeter of a square with user input
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+ function myButtonClicked() {
+  // input
+  const baseA = parseInt(document.getElementById("baseA-number").value)
+  const baseB = parseInt(document.getElementById("baseB-number").value)
+  const height = parseInt(document.getElementById("height-number").value)
+
+  //process
+
+  const area = [ ( baseA + baseB ) / 2 ] * height
+
+  // output
+  document.getElementById("area").innerHTML =
+    "Perimeter is equal to: " + area + " cm²"
 }
