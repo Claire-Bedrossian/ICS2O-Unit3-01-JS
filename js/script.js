@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
 /**
  * This function calculates the area and perimeter of a square with user input
  */
- function myButtonClicked() {
+function myButtonClicked() {
   // input
   const baseA = parseInt(document.getElementById("baseA-number").value)
   const baseB = parseInt(document.getElementById("baseB-number").value)
@@ -26,7 +26,7 @@ if (navigator.serviceWorker) {
 
   //process
 
-  const area = [ ( baseA + baseB ) / 2 ] * height
+  const area = [(baseA + baseB) / 2] * height
 
   // output
   document.getElementById("area").innerHTML =
