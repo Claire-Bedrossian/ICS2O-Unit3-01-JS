@@ -30,5 +30,5 @@ function myButtonClicked() {
 
   // output
   document.getElementById("area").innerHTML =
-    "Perimeter is equal to: " + area + " cm²"
+    "Area is equal to: " + area + " cm²"
 }
